@@ -10,6 +10,20 @@ class Component(ABC):
     def parent(self, parent: Component):
         self._parent = parent
 
+    def add(self, component: Component) -> None:
+        pass
+
+    def remove(self, component: Component) -> None:
+        pass
+
+    def is_composite(self) -> bool:
+        return False
+
+    @abstractmethod
+    def operation(self) -> str:
+        pass
+
+
 class Folha(Component):
 
     def operation(self) -> str:
