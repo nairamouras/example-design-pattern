@@ -2,6 +2,7 @@
 
 Exemplo do Design Pattern Composite em Python como atividade para a disciplina de Engenharia de Software
 
+```mermaid
 classDiagram
 class Component{
 +operation()
@@ -18,3 +19,4 @@ class Composite{
 Component *-- Leaf
 Component *-- Composite
 Component "0..*" o-- "1" Composite
+```
